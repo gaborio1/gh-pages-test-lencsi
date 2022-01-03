@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* background: #fee1e1; */
+  background: beige;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 0px auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 1200px;
+  background: #fee1e1;
+  background: #fee1e183;
+  /* background: beige; */
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #f8b1d8;
+  /* background-color: #fee1e1; */
+}
+
+/* Navbar links */
+.link-container {
+  /* float: left; */
+  /* display: block; */
+  margin: 0px auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.link-container a {
+  /* float: left; */
+  /* display: block; */
+  color: #f2f2f2;
+  color: #5a014a;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+/* .content {
+  padding: 16px;
+} */
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+h1 {
+  color: #26a4ca;
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2 {
+  color: #9298ba;
+  text-align: center;
+}
+
+p {
+  margin: 1.2rem;
+}
+
+img {
+  width: 600px;
+  /* height: 400px; */
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  padding: 5px;
+  border-radius: 1rem;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.column {
+  /* border: 2px solid #9298ba; */
+  width: 50%;
+  height: fit-content;
+}
+
+footer {
+  background-color: #f8b1d8;
+  width: 100%;
+  height: 100px;
+}
+
+/*# sourceMappingURL=/lencsi.1c0630db.css.map */

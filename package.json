@@ -1,0 +1,26 @@
+{
+  "name": "lencsi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaborio1/gh-pages-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaborio1/gh-pages-test/issues"
+  },
+  "homepage": "https://github.com/gaborio1/gh-pages-test#readme",
+  "devDependencies": {
+    "sass": "^1.45.2"
+  },
+  "dependencies": {
+    "@dogstudio/highway": "^2.2.1",
+    "gsap": "^3.9.1"
+  }
+}
