@@ -10,8 +10,8 @@
     <header>
         <div id="navbar">
             <div class="link-container">
-                <a href="#">Fooldal</a>
-                <a href="#">Bio</a>
+                <a href="/index.html">Fooldal</a>
+                <a href="/about.html">Magamrol</a>
                 <a href="#">Zene</a>
                 <a href="#">Rajzok</a>
                 <a href="#">Fotok</a>
@@ -19,8 +19,11 @@
         </div>
     </header>
 
-    <main class="main">
-        <section class="home">
+    <!-- EVERYTHING IN data-router-wrapper IS GOING TO TRANSITION -->
+    <!-- !!! ONLY ONE ELEMENT IN ROUTER WRAPPER !!! -->
+    <main data-router-wrapper="" class="main">
+        <!-- data-router-view IS GOING TO CHANGE -->
+        <section data-router-view="home" class="home">
             <div class="home-content">
                 <div class="row content-row1">
                     <div class="column column1.1">
@@ -167,6 +170,7 @@
     </footer>
     <script src="/script.d573be0b.js" type="text/javascript"></script>
     <script src="/js.00a46daa.js" type="text/javascript"></script>
+    <script src="/transition.f6bb2fc7.js" type="text/javascript"></script>
 </body>
 
 </html>
