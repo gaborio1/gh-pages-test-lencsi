@@ -9,21 +9,9 @@ body {
   background: beige;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  margin: 0px auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  max-width: 1200px;
-  background: #fee1e1;
-  background: #fee1e183;
-  /* background: beige; */
-}
-
 /* Style the navbar */
 #navbar {
+  z-index: 2;
   overflow: hidden;
   background-color: #f8b1d8;
   /* background-color: #fee1e1; */
@@ -31,6 +19,7 @@ body {
 
 /* Navbar links */
 .link-container {
+  height: 50px;
   /* float: left; */
   /* display: block; */
   margin: 0px auto;
@@ -46,7 +35,7 @@ body {
   color: #f2f2f2;
   color: #5a014a;
   text-align: center;
-  padding: 14px;
+  padding: 15px;
   text-decoration: none;
 }
 
@@ -100,6 +89,41 @@ img {
   /* border: 2px solid #9298ba; */
   width: 50%;
   height: fit-content;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  height: calc(100vh - 100px);
+  margin: 0px auto;
+  max-width: 1200px;
+  background: #fee1e1;
+  background: #fee1e183;
+  background: beige;
+  border: 3px solid green;
+}
+
+.home, .drawings {
+  height: calc(100vh - 250px);
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 100px;
+}
+
+.home, .drawings {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+.about {
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  height: calc(100vh - 250px);
+  overflow: scroll;
+  margin-top: 100px;
+  border: 3px solid rebeccapurple;
 }
 
 footer {
