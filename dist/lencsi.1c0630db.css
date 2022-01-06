@@ -104,26 +104,25 @@ img {
   border: 3px solid green;
 }
 
-.home, .drawings {
+.home, .drawings, .about {
+  display: flex;
+  justify-content: center;
   height: calc(100vh - 250px);
   position: absolute;
   width: 100%;
-  max-width: 1200px;
   margin-top: 100px;
+  border: 3px solid rebeccapurple;
 }
 
-.home, .drawings {
+.home-content, .drawings-content, .about-content {
+  width: 100%;
+  max-width: 1200px;
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  border: 3px solid saddlebrown;
 }
 
 .about {
-  position: absolute;
-  width: 100%;
-  max-width: 1200px;
-  height: calc(100vh - 250px);
   overflow: scroll;
-  margin-top: 100px;
-  border: 3px solid rebeccapurple;
 }
 
 footer {
