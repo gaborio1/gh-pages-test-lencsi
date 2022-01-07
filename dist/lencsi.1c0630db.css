@@ -101,24 +101,25 @@ img {
   background: #fee1e1;
   background: #fee1e183;
   background: beige;
-  border: 3px solid green;
+  border: 5px solid green;
 }
 
 .home, .drawings, .about {
+  position: absolute;
+  left: 0;
   display: flex;
   justify-content: center;
-  height: calc(100vh - 250px);
-  position: absolute;
   width: 100%;
+  height: calc(100vh - 250px);
   margin-top: 100px;
-  border: 3px solid rebeccapurple;
+  border: 5px solid rebeccapurple;
 }
 
 .home-content, .drawings-content, .about-content {
   width: 100%;
   max-width: 1200px;
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-  border: 3px solid saddlebrown;
+  border: 5px solid saddlebrown;
 }
 
 .about {
