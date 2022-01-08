@@ -12,7 +12,7 @@ class Fade extends Highway.Transition {
             0.5,
             {
                 left: "-100%",
-                top: "40%"
+                top: "50%"
             },
             {
                 left: "0%",
@@ -22,10 +22,12 @@ class Fade extends Highway.Transition {
                 to,
                 0.5,
                 {
-                    height: "2vh"
+                    // height: "2vh"
+                    height: "5%"
                 },
                 {
-                    height: "70vh",
+                    // height: "80vh",
+                    height: "90%",
                     top: "5%",
                     onComplete: function () {
                         from.remove();

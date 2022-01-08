@@ -8,6 +8,7 @@ body {
     /* background: #fee1e1; */
     background: beige;
     // background: rgb(97, 189, 228);
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
 }
 
 // .home {
@@ -102,29 +103,40 @@ img {
 
 
 .main {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-	height: calc(100vh - 100px);
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+	height: calc(100vh - 150px);
     margin: 0px auto;
-    // margin-top: 100px;
-    // margin-bottom: 100px;
-    max-width: 1200px;
+    // margin-top: 50px;
+    // margin-bottom: 50px;
+
+	// !!!
+    // max-width: 1200px;
+
     background: #fee1e1;
     background: #fee1e183;
     background: beige; 
+    background: transparent; 
 	border: 5px solid green;
 }
 
-.home, .drawings, .about {
+// .home, .drawings, .about (FULL WIDTH)
+.full-width-drw {
 	position: absolute;
 	left: 0;
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	height: calc(100vh - 250px);
+
+	// THIS WILL ALIGN CONTENT TO LEFT:
 	// max-width: 1200px;
-	margin-top: 100px;
+
+	height: 90%;
+	// height: calc(100vh - 200px);
 	border: 5px solid rebeccapurple;
 }
 
@@ -132,12 +144,13 @@ img {
 // 	background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 // }
 
-.home-content, .drawings-content, .about-content {
+// .home-content, .drawings-content, .about-content (MAX WIDTH: 1200)
+.max-width-content {
 	// position: absolute;
 	width: 100%;
 	max-width: 1200px;
 	background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-	border: 5px solid saddlebrown;
+	border: 5px solid rgb(19, 137, 139);
 }
 
 .about {
