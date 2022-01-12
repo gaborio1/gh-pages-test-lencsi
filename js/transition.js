@@ -9,24 +9,15 @@ class Fade extends Highway.Transition {
         const tl = new gsap.timeline();
         tl.fromTo(
             to,
-            0.5,
-            {
-                left: "-100%",
-                top: "50%"
-            },
-            {
-                left: "0%",
-            }
+            1,
+            { left: "-100%", top: "50%" },
+            { left: "0%", }
         )
             .fromTo(
                 to,
                 0.5,
+                { height: "2%" },
                 {
-                    // height: "2vh"
-                    height: "5%"
-                },
-                {
-                    // height: "80vh",
                     height: "90%",
                     top: "5%",
                     onComplete: function () {
@@ -35,7 +26,20 @@ class Fade extends Highway.Transition {
                     }
                 }
             )
-            .fromTo(to.children[0], 2, { opacity: 0 }, { opacity: 1 })
+            .fromTo(
+                to.children[0],
+                1,
+                { opacity: 0.3 },
+                { opacity: 1 },
+                "-=0.5"
+            )
+            // CURRENT CONTENT START TO FADE OUT BEFORE NEW SLIDES IN ("-=1.5")
+            .fromTo(
+                from,
+                1.2,
+                { opacity: 1 },
+                { opacity: 0 },
+                "-=1.5");
     }
     out({ from, done }) {
         done();

@@ -119,6 +119,7 @@ img {
   justify-content: center;
   width: 100%;
   height: 90%;
+  overflow: hidden;
 }
 
 .max-width-content {
